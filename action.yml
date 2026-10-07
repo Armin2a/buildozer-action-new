@@ -3,7 +3,7 @@ description: 'Convert Kivy app to APK'
 inputs:
   python-version:
     description: 'Python version to use'
-    default: '3.8'
+    default: '3.10'
   work-dir:
     default: '.'
     description: 'Working directory'
@@ -60,7 +60,9 @@ runs:
           libtinfo5 \
           cmake \
           libffi-dev \
-          libssl-dev
+          libssl-dev \
+          automake \
+          libtool-bin \
         export PATH=$PATH:~/.local/bin/
         python3 -m pip install --upgrade \
           Cython==0.29.33 \
