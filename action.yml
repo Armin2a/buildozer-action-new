@@ -62,7 +62,7 @@ runs:
           libffi-dev \
           libssl-dev \
           automake \
-          libtool-bin \
+          libtool-bin 
         export PATH=$PATH:~/.local/bin/
         python3 -m pip install --upgrade \
           Cython==0.29.33 \
